@@ -1,0 +1,556 @@
+============================================================
+  MASTER QUALITY REPORT — 28 May 2026
+============================================================
+
+  Total calls analyzed: 82
+  Average score:        24/100
+  Best call:            48/100
+  Worst call:           1/100
+
+------------------------------------------------------------
+  CENTER-WISE BREAKDOWN
+------------------------------------------------------------
+  greater-noida         28 calls  avg 29/100  best 48  worst 11
+  sector18              29 calls  avg 21/100  best 43  worst 1
+  sector62              25 calls  avg 24/100  best 39  worst 13
+
+------------------------------------------------------------
+  COUNSELOR RANKINGS
+------------------------------------------------------------
+  Ankit                  1 calls  avg 31/100  best 31  worst 31
+  Deepthi                4 calls  avg 20/100  best 28  worst 13
+  Deepti                 4 calls  avg 18/100  best 25  worst 8
+  Dilbar                 1 calls  avg 15/100  best 15  worst 15
+  Guria                  1 calls  avg 31/100  best 31  worst 31
+  Hina                   1 calls  avg 26/100  best 26  worst 26
+  Madhu                  1 calls  avg 27/100  best 27  worst 27
+  Manisha                1 calls  avg 13/100  best 13  worst 13
+  Muskaan                1 calls  avg 23/100  best 23  worst 23
+  Pranati                1 calls  avg 22/100  best 22  worst 22
+  Shrivya                1 calls  avg 33/100  best 33  worst 33
+  Sona                   1 calls  avg 27/100  best 27  worst 27
+  Unknown               64 calls  avg 25/100  best 48  worst 1
+
+============================================================
+  DON'TS — TOP MISTAKES ACROSS ALL CALLS
+============================================================
+  52%  ███████████  Brand name not clearly mentioned (43x)
+  30%  ███████  No discovery questions asked — didn't qualify the lead (25x)
+  22%  █████  Said 'Lakshmi Academy' instead of 'Lakme Academy' (18x)
+  20%  █████  Price mentioned too early — establish value first (16x)
+  17%  ████  No visit booked — biggest miss (14x)
+  12%  ███  Customer IS a makeup artist — should upsell advanced courses (10x)
+   6%  ██  Passive ending — put ball in customer's court (5x)
+   5%  ██  Agent speaking 83% of time — listen more (4x)
+   5%  ██  Agent speaking 81% of time — listen more (4x)
+   5%  ██  Agent speaking 94% of time — listen more (4x)
+   5%  ██  Agent speaking 76% of time — listen more (4x)
+   5%  ██  Agent speaking 84% of time — listen more (4x)
+   4%  █  Agent speaking 69% of time — listen more (3x)
+   4%  █  Agent speaking 65% of time — listen more (3x)
+   4%  █  Course dumping — overwhelmed customer with too many options (3x)
+
+============================================================
+  DO'S — WHAT HIGH SCORERS DO DIFFERENTLY
+============================================================
+  - Greeted the customer warmly
+  - Attempted to book a center visit
+  - Built value by mentioning placement/career outcomes
+  - Used specific time anchors (today/tomorrow) for closing
+  - Gave a specific course recommendation instead of listing all
+  - Built value before discussing price
+  - Asked qualification questions to understand the prospect
+  - Correctly used brand name 'Lakme Academy'
+  - Maintained good talk/listen ratio (60:40 or better)
+
+============================================================
+  CHEAT SHEET: DO'S & DON'TS
+============================================================
+
+  DON'T:
+    Brand name not clearly mentioned
+    No discovery questions asked — didn't qualify the lead
+    Said 'Lakshmi Academy' instead of 'Lakme Academy'
+    Price mentioned too early — establish value first
+    No visit booked — biggest miss
+    Customer IS a makeup artist — should upsell advanced courses
+    Passive ending — put ball in customer's court
+    Agent speaking 83% of time — listen more
+    Agent speaking 81% of time — listen more
+    Agent speaking 94% of time — listen more
+
+  DO:
+    Greeted the customer warmly
+    Attempted to book a center visit
+    Built value by mentioning placement/career outcomes
+    Used specific time anchors (today/tomorrow) for closing
+    Gave a specific course recommendation instead of listing all
+    Built value before discussing price
+    Asked qualification questions to understand the prospect
+    Correctly used brand name 'Lakme Academy'
+    Maintained good talk/listen ratio (60:40 or better)
+
+============================================================
+  COACHING PRIORITIES (by frequency)
+============================================================
+  80%  60:40 ratio is ideal. Ask more questions.
+  54%  Keep explanations under 20 seconds. Ask a question.
+  40%  If stuck: 'Let me check the best option for you...'
+  30%  Always ask: current level? goal? timeline? budget?
+  22%  Practice saying 'Lakme Academy' — brand name is critical
+  20%  Build course value before discussing price
+  17%  Goal of every call is a visit. Ask: 'Come see the center at 4?'
+  12%  When customer says they're a pro, pitch advanced/international only
+   6%  End with firm next step: 'I'll call you tomorrow at 11. OK?'
+   4%  Don't list all courses. Ask first, recommend ONE.
+
+============================================================
+  PER-CALL DETAILS
+============================================================
+   Unknown           1/100  [sector18]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_HugSRzmr_1778845167147.json  |  1.6 min  |  Agent 89.0%  |  Flags: 6
+       - Said 'Lakshmi Academy' instead of 'Lakme Academy'
+       - 37.9s monologue — too long, lost the customer
+       - Price mentioned too early — establish value first
+       - No visit booked — biggest miss
+       - Agent speaking 89% of time — listen more
+       - 54.26s dead air — awkward silence
+   Deepti            8/100  [sector18]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_5rynU4iR_1779179192723.json  |  4.2 min  |  Agent 65.8%  |  Flags: 8
+       - Said 'Lakshmi Academy' instead of 'Lakme Academy'
+       - Customer IS a makeup artist — should upsell advanced courses
+       - Course dumping — overwhelmed customer with too many options
+       - 35.2s monologue — too long, lost the customer
+       - 7 different prices mentioned — confusing
+       - Passive ending — put ball in customer's court
+       - Agent speaking 66% of time — listen more
+       - 30.86s dead air — awkward silence
+   Unknown           9/100  [sector18]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_V5fgmu5m_1778404704627.json  |  1.2 min  |  Agent 70.0%  |  Flags: 5
+       - Brand name not clearly mentioned
+       - No discovery questions asked — didn't qualify the lead
+       - 42.3s monologue — too long, lost the customer
+       - Agent speaking 70% of time — listen more
+       - 28.84s dead air — awkward silence
+   Unknown          11/100  [greater-noida]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_SauKcZFq_1777523714240.json  |  1.6 min  |  Agent 94.5%  |  Flags: 5
+       - Brand name not clearly mentioned
+       - No discovery questions asked — didn't qualify the lead
+       - 80.2s monologue — too long, lost the customer
+       - Agent speaking 94% of time — listen more
+       - 24.66s dead air — awkward silence
+   Unknown          11/100  [sector18]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_7MoCB10h_1779875409997.json  |  0.8 min  |  Agent 93.1%  |  Flags: 4
+       - 34.18s monologue — too long, lost the customer
+       - Price mentioned too early — establish value first
+       - No visit booked — biggest miss
+       - Agent speaking 93% of time — listen more
+   Unknown          12/100  [sector18]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_LHbgv5E0_1779254338775.json  |  0.5 min  |  Agent 98.1%  |  Flags: 4
+       - Brand name not clearly mentioned
+       - No discovery questions asked — didn't qualify the lead
+       - No visit booked — biggest miss
+       - Agent speaking 98% of time — listen more
+   Unknown          13/100  [greater-noida]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_COLtP4mL_1778237951613.json  |  0.6 min  |  Agent 87.5%  |  Flags: 4
+       - Said 'Lakshmi Academy' instead of 'Lakme Academy'
+       - Customer IS a makeup artist — should upsell advanced courses
+       - No visit booked — biggest miss
+       - Agent speaking 87% of time — listen more
+   Deepthi          13/100  [sector18]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_1AuBCLht_1779708961946.json  |  1.2 min  |  Agent 90.6%  |  Flags: 4
+       - Brand name not clearly mentioned
+       - 34.92s monologue — too long, lost the customer
+       - No visit booked — biggest miss
+       - Agent speaking 91% of time — listen more
+   Deepthi          13/100  [sector18]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_D0JMLDj2_1779705105159.json  |  0.6 min  |  Agent 100.0%  |  Flags: 4
+       - Said 'Lakshmi Academy' instead of 'Lakme Academy'
+       - 37.92s monologue — too long, lost the customer
+       - No visit booked — biggest miss
+       - Agent speaking 100% of time — listen more
+   Unknown          13/100  [sector18]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_OvWWL71s_1779516257672.json  |  1.4 min  |  Agent 82.3%  |  Flags: 3
+       - No visit booked — biggest miss
+       - Agent speaking 82% of time — listen more
+       - 25.1s dead air — awkward silence
+   Manisha          13/100  [sector62]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_N9n54JXW_1779346843550.json  |  0.7 min  |  Agent 94.3%  |  Flags: 4
+       - Brand name not clearly mentioned
+       - No discovery questions asked — didn't qualify the lead
+       - Price mentioned too early — establish value first
+       - Agent speaking 94% of time — listen more
+   Unknown          13/100  [sector62]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_ovTCUIoq_1779426380474.json  |  0.9 min  |  Agent 97.4%  |  Flags: 5
+       - Said 'Lakshmi Academy' instead of 'Lakme Academy'
+       - No discovery questions asked — didn't qualify the lead
+       - 50.82s monologue — too long, lost the customer
+       - Price mentioned too early — establish value first
+       - Agent speaking 97% of time — listen more
+   Unknown          14/100  [sector18]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_TfA1ICFY_1779430216525.json  |  1.1 min  |  Agent 98.0%  |  Flags: 3
+       - 33.1s monologue — too long, lost the customer
+       - No visit booked — biggest miss
+       - Agent speaking 98% of time — listen more
+   Deepti           14/100  [sector18]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_eTKCLznu_1779181017793.json  |  3.8 min  |  Agent 94.1%  |  Flags: 4
+       - Brand name not clearly mentioned
+       - 123.78s monologue — too long, lost the customer
+       - Agent speaking 94% of time — listen more
+       - 21.86s dead air — awkward silence
+   Unknown          14/100  [sector62]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_wMsuZrxE_1776751616683.json  |  2.7 min  |  Agent 83.4%  |  Flags: 6
+       - Brand name not clearly mentioned
+       - Customer IS a makeup artist — should upsell advanced courses
+       - 49.24s monologue — too long, lost the customer
+       - Price mentioned too early — establish value first
+       - Agent speaking 83% of time — listen more
+       - 30.34s dead air — awkward silence
+   Unknown          15/100  [greater-noida]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_HRr2HCDG_1779092872948.json  |  2.7 min  |  Agent 86.2%  |  Flags: 4
+       - Said 'Lakshmi Academy' instead of 'Lakme Academy'
+       - 38.1s monologue — too long, lost the customer
+       - Agent speaking 86% of time — listen more
+       - 23.53s dead air — awkward silence
+   Dilbar           15/100  [greater-noida]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_O815tpqM_1776939916492.json  |  0.6 min  |  Agent 77.9%  |  Flags: 3
+       - No discovery questions asked — didn't qualify the lead
+       - No visit booked — biggest miss
+       - Agent speaking 78% of time — listen more
+   Unknown          15/100  [sector18]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_jwMWqwV3_1779096056012.json  |  1.4 min  |  Agent 82.8%  |  Flags: 3
+       - 31.46s monologue — too long, lost the customer
+       - Agent speaking 83% of time — listen more
+       - 48.59s dead air — awkward silence
+   Unknown          15/100  [sector62]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_XEln5ibQ_1776246221793.json  |  6.5 min  |  Agent 78.0%  |  Flags: 5
+       - Brand name not clearly mentioned
+       - 44.9s monologue — too long, lost the customer
+       - Price mentioned too early — establish value first
+       - Agent speaking 78% of time — listen more
+       - 58.36s dead air — awkward silence
+   Unknown          15/100  [sector62]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_oin6ZGXl_1779280547541.json  |  2.6 min  |  Agent 76.0%  |  Flags: 5
+       - Brand name not clearly mentioned
+       - No discovery questions asked — didn't qualify the lead
+       - 37.64s monologue — too long, lost the customer
+       - Price mentioned too early — establish value first
+       - Agent speaking 76% of time — listen more
+   Unknown          16/100  [greater-noida]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_m8OVAG4Y_1779366913486.json  |  0.6 min  |  Agent 83.7%  |  Flags: 3
+       - Brand name not clearly mentioned
+       - No discovery questions asked — didn't qualify the lead
+       - Agent speaking 84% of time — listen more
+   Unknown          16/100  [sector18]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_LFFDpvGE_1779877444351.json  |  0.6 min  |  Agent 74.1%  |  Flags: 3
+       - Said 'Lakshmi Academy' instead of 'Lakme Academy'
+       - No visit booked — biggest miss
+       - Agent speaking 74% of time — listen more
+   Unknown          17/100  [sector18]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_ubCcy6Mh_1779884532086.json  |  3.4 min  |  Agent 83.6%  |  Flags: 6
+       - Brand name not clearly mentioned
+       - No discovery questions asked — didn't qualify the lead
+       - 63.88s monologue — too long, lost the customer
+       - 4 different prices mentioned — confusing
+       - Agent speaking 84% of time — listen more
+       - 29.44s dead air — awkward silence
+   Unknown          18/100  [greater-noida]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_0EoygSAW_1779367074312.json  |  2.2 min  |  Agent 68.9%  |  Flags: 2
+       - 40.56s monologue — too long, lost the customer
+       - Agent speaking 69% of time — listen more
+   Unknown          18/100  [greater-noida]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_PsXWcWo1_1778909049602.json  |  0.9 min  |  Agent 73.9%  |  Flags: 3
+       - Brand name not clearly mentioned
+       - No visit booked — biggest miss
+       - Agent speaking 74% of time — listen more
+   Unknown          18/100  [sector18]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_jnlC0NRZ_1778306267793.json  |  0.7 min  |  Agent 65.5%  |  Flags: 2
+       - No visit booked — biggest miss
+       - Agent speaking 65% of time — listen more
+   Unknown          18/100  [sector62]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_BHbHFM5C_1778909265913.json  |  1.5 min  |  Agent 99.0%  |  Flags: 4
+       - Brand name not clearly mentioned
+       - 68.1s monologue — too long, lost the customer
+       - Agent speaking 99% of time — listen more
+       - 27.02s dead air — awkward silence
+   Unknown          18/100  [sector62]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_uSaUgPKC_1779519576768.json  |  3.4 min  |  Agent 81.2%  |  Flags: 3
+       - Price mentioned too early — establish value first
+       - Agent speaking 81% of time — listen more
+       - 30.75s dead air — awkward silence
+   Unknown          19/100  [greater-noida]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_SPPqjw0X_1779687971259.json  |  0.8 min  |  Agent 75.8%  |  Flags: 2
+       - No discovery questions asked — didn't qualify the lead
+       - Agent speaking 76% of time — listen more
+   Unknown          19/100  [greater-noida]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_jzyE9dhf_1779186280021.json  |  0.8 min  |  Agent 69.3%  |  Flags: 2
+       - No discovery questions asked — didn't qualify the lead
+       - Agent speaking 69% of time — listen more
+   Unknown          19/100  [sector62]  Critical — immediate intervention
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_STiWDdAl_1778151687988.json  |  1.0 min  |  Agent 84.1%  |  Flags: 3
+       - No discovery questions asked — didn't qualify the lead
+       - Passive ending — put ball in customer's court
+       - Agent speaking 84% of time — listen more
+   Unknown          20/100  [sector18]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_ypit2qFh_1779173119457.json  |  3.3 min  |  Agent 80.3%  |  Flags: 4
+       - Brand name not clearly mentioned
+       - 77.6s monologue — too long, lost the customer
+       - Agent speaking 80% of time — listen more
+       - 20.96s dead air — awkward silence
+   Unknown          20/100  [sector62]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_TXnrzZYM_1779255594098.json  |  0.6 min  |  Agent 100.0%  |  Flags: 4
+       - Brand name not clearly mentioned
+       - No discovery questions asked — didn't qualify the lead
+       - 37.76s monologue — too long, lost the customer
+       - Agent speaking 100% of time — listen more
+   Unknown          21/100  [sector18]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_GQgXSrHA_1779427453352.json  |  1.5 min  |  Agent 76.0%  |  Flags: 2
+       - Agent speaking 76% of time — listen more
+       - 36.36s dead air — awkward silence
+   Unknown          21/100  [sector62]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_J8ogzg3I_1777974169199.json  |  1.6 min  |  Agent 67.9%  |  Flags: 4
+       - Brand name not clearly mentioned
+       - Price mentioned too early — establish value first
+       - Agent speaking 68% of time — listen more
+       - 46.7s dead air — awkward silence
+   Unknown          22/100  [greater-noida]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_ChFTGn5v_1777440628632.json  |  1.9 min  |  Agent 80.7%  |  Flags: 4
+       - Brand name not clearly mentioned
+       - 42.02s monologue — too long, lost the customer
+       - Passive ending — put ball in customer's court
+       - Agent speaking 81% of time — listen more
+   Pranati          22/100  [sector62]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_IpHYYtnB_1779190950339.json  |  0.0 min  |  Agent 0%  |  Flags: 3
+       - Brand name not clearly mentioned
+       - No discovery questions asked — didn't qualify the lead
+       - No visit booked — biggest miss
+   Muskaan          23/100  [greater-noida]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_HVjxwHoR_1779700386619.json  |  1.4 min  |  Agent 80.1%  |  Flags: 2
+       - No discovery questions asked — didn't qualify the lead
+       - Agent speaking 80% of time — listen more
+   Deepti           23/100  [sector18]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_aIZDGnxm_1779254932079.json  |  6.2 min  |  Agent 63.6%  |  Flags: 3
+       - Brand name not clearly mentioned
+       - 32.78s monologue — too long, lost the customer
+       - 54.79s dead air — awkward silence
+   Deepthi          24/100  [sector18]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_Fz6pX3bp_1779600785444.json  |  0.7 min  |  Agent 65.0%  |  Flags: 1
+       - Said 'Lakshmi Academy' instead of 'Lakme Academy'
+   Unknown          24/100  [sector62]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_cUEpYT8x_1777370747791.json  |  1.1 min  |  Agent 95.3%  |  Flags: 4
+       - Said 'Lakshmi Academy' instead of 'Lakme Academy'
+       - 51.86s monologue — too long, lost the customer
+       - Price mentioned too early — establish value first
+       - Agent speaking 95% of time — listen more
+   Unknown          24/100  [sector62]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_e7BmKMX0_1778064166670.json  |  2.4 min  |  Agent 82.6%  |  Flags: 3
+       - Brand name not clearly mentioned
+       - 47.42s monologue — too long, lost the customer
+       - Agent speaking 83% of time — listen more
+   Unknown          24/100  [sector62]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_goZ6BYYE_1777876050153.json  |  1.7 min  |  Agent 97.0%  |  Flags: 4
+       - Brand name not clearly mentioned
+       - 79.0s monologue — too long, lost the customer
+       - Price mentioned too early — establish value first
+       - Agent speaking 97% of time — listen more
+   Unknown          25/100  [greater-noida]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_QD54d0aw_1778322299407.json  |  2.0 min  |  Agent 93.4%  |  Flags: 3
+       - 48.06s monologue — too long, lost the customer
+       - Agent speaking 93% of time — listen more
+       - 29.9s dead air — awkward silence
+   Unknown          25/100  [sector18]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_mq2LKXnO_1779090580054.json  |  1.5 min  |  Agent 73.1%  |  Flags: 2
+       - Agent speaking 73% of time — listen more
+       - 22.58s dead air — awkward silence
+   Deepti           25/100  [sector18]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_vfXv08UV_1779515377441.json  |  1.4 min  |  Agent 87.9%  |  Flags: 3
+       - Said 'Lakshmi Academy' instead of 'Lakme Academy'
+       - Agent speaking 88% of time — listen more
+       - 72.16s dead air — awkward silence
+   Hina             26/100  [sector62]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_O2NQq5rs_1779347753818.json  |  3.2 min  |  Agent 99.5%  |  Flags: 5
+       - Brand name not clearly mentioned
+       - 179.42s monologue — too long, lost the customer
+       - Price mentioned too early — establish value first
+       - Agent speaking 99% of time — listen more
+       - 34.26s dead air — awkward silence
+   Unknown          26/100  [sector62]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_qmvF3O2i_1779512263281.json  |  1.1 min  |  Agent 79.8%  |  Flags: 3
+       - Brand name not clearly mentioned
+       - Price mentioned too early — establish value first
+       - Agent speaking 80% of time — listen more
+   Unknown          27/100  [greater-noida]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_lLM0264o_1777440021810.json  |  6.4 min  |  Agent 83.9%  |  Flags: 5
+       - Brand name not clearly mentioned
+       - No discovery questions asked — didn't qualify the lead
+       - 58.14s monologue — too long, lost the customer
+       - Agent speaking 84% of time — listen more
+       - 22.64s dead air — awkward silence
+   Unknown          27/100  [greater-noida]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_uioVerge_1778485080526.json  |  3.5 min  |  Agent 87.1%  |  Flags: 3
+       - Brand name not clearly mentioned
+       - 63.68s monologue — too long, lost the customer
+       - Agent speaking 87% of time — listen more
+   Madhu            27/100  [sector18]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_beP6QfLh_1779431976132.json  |  1.7 min  |  Agent 69.8%  |  Flags: 2
+       - Brand name not clearly mentioned
+       - Agent speaking 70% of time — listen more
+   Sona             27/100  [sector18]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_oWzZQlES_1779258544972.json  |  6.2 min  |  Agent 85.7%  |  Flags: 5
+       - Said 'Lakshmi Academy' instead of 'Lakme Academy'
+       - Customer IS a makeup artist — should upsell advanced courses
+       - Course dumping — overwhelmed customer with too many options
+       - 49.9s monologue — too long, lost the customer
+       - Agent speaking 86% of time — listen more
+   Unknown          28/100  [greater-noida]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_O05KezZU_1778845554089.json  |  5.4 min  |  Agent 67.5%  |  Flags: 5
+       - Brand name not clearly mentioned
+       - No discovery questions asked — didn't qualify the lead
+       - 34.24s monologue — too long, lost the customer
+       - Agent speaking 68% of time — listen more
+       - 22.14s dead air — awkward silence
+   Deepthi          28/100  [sector18]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_xcPTkjQe_1779601133374.json  |  1.7 min  |  Agent 53.1%  |  Flags: 2
+       - Said 'Lakshmi Academy' instead of 'Lakme Academy'
+       - Passive ending — put ball in customer's court
+   Unknown          29/100  [sector62]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_PPrzCzrR_1778750732745.json  |  2.2 min  |  Agent 81.0%  |  Flags: 3
+       - Said 'Lakshmi Academy' instead of 'Lakme Academy'
+       - 33.4s monologue — too long, lost the customer
+       - Agent speaking 81% of time — listen more
+   Unknown          30/100  [sector18]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_Ronl7Jyv_1779177105308.json  |  0.7 min  |  Agent 59.4%  |  Flags: 2
+       - No discovery questions asked — didn't qualify the lead
+       - No visit booked — biggest miss
+   Unknown          30/100  [sector62]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_vMQgXyzq_1779258378516.json  |  2.5 min  |  Agent 75.7%  |  Flags: 4
+       - Said 'Lakshmi Academy' instead of 'Lakme Academy'
+       - Customer IS a makeup artist — should upsell advanced courses
+       - Price mentioned too early — establish value first
+       - Agent speaking 76% of time — listen more
+   Unknown          31/100  [greater-noida]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_OjUNZwOf_1777187021314.json  |  15.4 min  |  Agent 93.7%  |  Flags: 5
+       - Brand name not clearly mentioned
+       - 247.52s monologue — too long, lost the customer
+       - Passive ending — put ball in customer's court
+       - Agent speaking 94% of time — listen more
+       - 45.11s dead air — awkward silence
+   Unknown          31/100  [greater-noida]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_RkXVNUbM_1779865848741.json  |  5.2 min  |  Agent 88.0%  |  Flags: 4
+       - Brand name not clearly mentioned
+       - 112.12s monologue — too long, lost the customer
+       - Agent speaking 88% of time — listen more
+       - 72.89s dead air — awkward silence
+   Ankit            31/100  [sector18]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_u8chEROA_1779178397018.json  |  0.0 min  |  Agent 0%  |  Flags: 1
+       - Said 'Lakshmi Academy' instead of 'Lakme Academy'
+   Unknown          31/100  [sector62]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_Aqknm6M0_1777272912850.json  |  0.8 min  |  Agent 98.0%  |  Flags: 2
+       - Brand name not clearly mentioned
+       - Agent speaking 98% of time — listen more
+   Unknown          31/100  [sector62]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_QUBAFQw5_1778826230615.json  |  0.0 min  |  Agent 0%  |  Flags: 3
+       - Brand name not clearly mentioned
+       - No discovery questions asked — didn't qualify the lead
+       - Price mentioned too early — establish value first
+   Guria            31/100  [sector62]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_d05B0oLb_1778583258003.json  |  1.1 min  |  Agent 96.6%  |  Flags: 3
+       - 62.92s monologue — too long, lost the customer
+       - Agent speaking 97% of time — listen more
+       - 30.71s dead air — awkward silence
+   Unknown          32/100  [greater-noida]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_xDeM20Sv_1777524274021.json  |  6.9 min  |  Agent 69.2%  |  Flags: 3
+       - 81.16s monologue — too long, lost the customer
+       - Agent speaking 69% of time — listen more
+       - 29.92s dead air — awkward silence
+   Unknown          32/100  [sector62]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_ChK0Sdxr_1779261642197.json  |  1.9 min  |  Agent 57.7%  |  Flags: 3
+       - Said 'Lakshmi Academy' instead of 'Lakme Academy'
+       - No discovery questions asked — didn't qualify the lead
+       - Price mentioned too early — establish value first
+   Shrivya          33/100  [sector62]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_XyzI8WYz_1777440733684.json  |  0.8 min  |  Agent 55.7%  |  Flags: 2
+       - Said 'Lakshmi Academy' instead of 'Lakme Academy'
+       - No discovery questions asked — didn't qualify the lead
+   Unknown          34/100  [sector18]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_9YyGnB9X_1779515853655.json  |  2.2 min  |  Agent 65.3%  |  Flags: 2
+       - Brand name not clearly mentioned
+       - Agent speaking 65% of time — listen more
+   Unknown          34/100  [sector62]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_Go81jWAg_1778751438973.json  |  2.7 min  |  Agent 64.3%  |  Flags: 3
+       - Brand name not clearly mentioned
+       - 40.54s monologue — too long, lost the customer
+       - 23.46s dead air — awkward silence
+   Unknown          35/100  [greater-noida]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_VllvQ5cW_1778656524960.json  |  1.1 min  |  Agent 35.7%  |  Flags: 2
+       - Brand name not clearly mentioned
+       - No discovery questions asked — didn't qualify the lead
+   Unknown          35/100  [sector18]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_WzdfvWHg_1779181455646.json  |  1.5 min  |  Agent 81.2%  |  Flags: 3
+       - Said 'Lakshmi Academy' instead of 'Lakme Academy'
+       - Customer IS a makeup artist — should upsell advanced courses
+       - Agent speaking 81% of time — listen more
+   Unknown          36/100  [greater-noida]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_NW2aH2cx_1778924513936.json  |  3.7 min  |  Agent 88.0%  |  Flags: 3
+       - Brand name not clearly mentioned
+       - 87.42s monologue — too long, lost the customer
+       - Agent speaking 88% of time — listen more
+   Unknown          36/100  [sector18]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_JmIHAhJQ_1778306740617.json  |  1.8 min  |  Agent 77.8%  |  Flags: 2
+       - Brand name not clearly mentioned
+       - Agent speaking 78% of time — listen more
+   Unknown          37/100  [greater-noida]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_2MtjjhE5_1777796201553.json  |  7.2 min  |  Agent 65.2%  |  Flags: 3
+       - 86.9s monologue — too long, lost the customer
+       - Agent speaking 65% of time — listen more
+       - 23.3s dead air — awkward silence
+   Unknown          39/100  [greater-noida]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_49eZewMz_1778908755627.json  |  5.3 min  |  Agent 89.1%  |  Flags: 3
+       - Brand name not clearly mentioned
+       - 118.98s monologue — too long, lost the customer
+       - Agent speaking 89% of time — listen more
+   Unknown          39/100  [greater-noida]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_wWrYsqV0_1778998366998.json  |  2.3 min  |  Agent 42.4%  |  Flags: 2
+       - Brand name not clearly mentioned
+       - No discovery questions asked — didn't qualify the lead
+   Unknown          39/100  [sector62]  Poor — urgent coaching
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_qb9Syzoz_1778128481571.json  |  0.9 min  |  Agent 36.2%  |  Flags: 2
+       - Brand name not clearly mentioned
+       - No discovery questions asked — didn't qualify the lead
+   Unknown          43/100  [greater-noida]  Average — needs retraining
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_8D8IbWNC_1777699912941.json  |  8.9 min  |  Agent 87.5%  |  Flags: 6
+       - Brand name not clearly mentioned
+       - Customer IS a makeup artist — should upsell advanced courses
+       - Course dumping — overwhelmed customer with too many options
+       - 104.14s monologue — too long, lost the customer
+       - Agent speaking 87% of time — listen more
+       - 25.38s dead air — awkward silence
+   Unknown          43/100  [greater-noida]  Average — needs retraining
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_BHE2d8vF_1777441903133.json  |  14.6 min  |  Agent 91.6%  |  Flags: 4
+       - Customer IS a makeup artist — should upsell advanced courses
+       - 199.12s monologue — too long, lost the customer
+       - Agent speaking 92% of time — listen more
+       - 63.81s dead air — awkward silence
+   Unknown          43/100  [sector18]  Average — needs retraining
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_ryEYUjYJ_1779541080163.json  |  1.9 min  |  Agent 56.2%  |  Flags: 2
+       - Brand name not clearly mentioned
+       - No discovery questions asked — didn't qualify the lead
+   Unknown          45/100  [greater-noida]  Average — needs retraining
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_Yji0dTzG_1778843880634.json  |  0.0 min  |  Agent 0%  |  Flags: 1
+       - Brand name not clearly mentioned
+   Unknown          47/100  [greater-noida]  Average — needs retraining
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_8s2O6XFh_1779516341637.json  |  3.4 min  |  Agent 61.2%  |  Flags: 3
+       - Customer IS a makeup artist — should upsell advanced courses
+       - 45.32s monologue — too long, lost the customer
+       - 21.64s dead air — awkward silence
+   Unknown          48/100  [greater-noida]  Average — needs retraining
+      https___cdn-az.superleap.com_prod-static-assets_QU9jGk_file_transcriptions_QU9jGk_3no6O0ez_1779367860320.json  |  8.3 min  |  Agent 82.9%  |  Flags: 5
+       - Brand name not clearly mentioned
+       - Customer IS a makeup artist — should upsell advanced courses
+       - 156.88s monologue — too long, lost the customer
+       - Agent speaking 83% of time — listen more
+       - 57.96s dead air — awkward silence
+
+============================================================
+  Report saved: master-report-2026-05-28.txt
+============================================================

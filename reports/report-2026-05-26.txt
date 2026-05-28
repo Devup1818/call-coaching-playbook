@@ -1,0 +1,43 @@
+============================================================
+  DAILY CALL REPORT — 26 May 2026
+============================================================
+
+  Total calls analyzed: 1
+  Average score:        8/100
+  Best call:            8/100
+  Worst call:           8/100
+
+------------------------------------------------------------
+  PER-CALL BREAKDOWN
+------------------------------------------------------------
+   Deepti            8/100  Critical — immediate intervention
+     File: QU9jGk_5rynU4iR_1779179192723.json
+     Duration: 4.2 min  |  Agent: 65.8%  |  Dead air: 30.86s
+     Flag: Said 'Lakshmi Academy' instead of 'Lakme Academy'
+     Flag: Customer IS a makeup artist — should upsell advanced courses
+     Flag: Course dumping — overwhelmed customer with too many options
+
+------------------------------------------------------------
+  TOP MISTAKES THIS PERIOD
+------------------------------------------------------------
+  Said 'Lakshmi Academy' instead of 'Lakme Academy'  (1x) #
+  Customer IS a makeup artist — should upsell advanced courses (1x) #
+  Course dumping — overwhelmed customer with too many options (1x) #
+  35.2s monologue — too long, lost the customer      (1x) #
+  7 different prices mentioned — confusing           (1x) #
+  Passive ending — put ball in customer's court      (1x) #
+  Agent speaking 66% of time — listen more           (1x) #
+  30.86s dead air — awkward silence                  (1x) #
+
+------------------------------------------------------------
+  COACHING PRIORITIES
+------------------------------------------------------------
+  > Practice saying 'Lakme Academy' — brand name is critical
+  > When customer says they're a pro, pitch advanced/international only
+  > Don't list all courses. Ask first, recommend ONE.
+  > Keep explanations under 20 seconds. Ask a question.
+  > Give max 3 tiers: Basic -> Pro -> Global. Keep simple.
+
+============================================================
+  Report saved: report-2026-05-26.txt
+============================================================
