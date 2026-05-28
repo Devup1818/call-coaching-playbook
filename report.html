@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lakmé Academy — Call Conversion System</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+    padding: 40px 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Cover */
+  .cover {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+    border-radius: 24px;
+    padding: 60px;
+    margin-bottom: 40px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(236,72,153,0.15), transparent);
+    border-radius: 50%;
+  }
+  .cover h1 { font-size: 42px; font-weight: 800; margin-bottom: 8px; position: relative; }
+  .cover .subtitle { font-size: 18px; color: #94a3b8; font-weight: 400; position: relative; }
+  .cover .meta {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+    color: #64748b;
+    position: relative;
+  }
+  .cover .meta span { display: flex; align-items: center; gap: 6px; }
+  .badge {
+    display: inline-block;
+    background: rgba(236,72,153,0.2);
+    color: #f472b6;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  /* Section */
+  .section {
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    border: 1px solid #e2e8f0;
+  }
+  .section h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section h2 .num {
+    background: #0f172a;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .section h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0 10px;
+    color: #0f172a;
+  }
+  .section p { color: #475569; margin-bottom: 14px; font-size: 15px; }
+  .section ul { margin: 10px 0 16px 20px; }
+  .section li { color: #475569; margin-bottom: 6px; font-size: 14px; }
+
+  /* Pipeline Diagram */
+  .pipeline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 12px;
+  }
+  .pipe-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 100px;
+  }
+  .pipe-step .box {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    width: 100%;
+  }
+  .pipe-step .box.green { border-color: #22c55e; background: #f0fdf4; }
+  .pipe-step .box.red { border-color: #ef4444; background: #fef2f2; }
+  .pipe-step .box.amber { border-color: #f59e0b; background: #fffbeb; }
+  .pipe-step .label { font-size: 11px; color: #94a3b8; margin-top: 4px; }
+  .pipe-arrow { font-size: 20px; color: #94a3b8; }
+
+  /* Score Card */
+  .score-card {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+  .score-big {
+    background: #fef2f2;
+    border: 2px solid #ef4444;
+    border-radius: 16px;
+    padding: 24px 32px;
+    text-align: center;
+    min-width: 160px;
+  }
+  .score-big .num { font-size: 56px; font-weight: 800; color: #dc2626; line-height: 1; }
+  .score-big .lbl { font-size: 14px; color: #64748b; margin-top: 4px; }
+  .score-big .grade { font-size: 13px; font-weight: 600; color: #dc2626; margin-top: 4px; }
+
+  .score-details {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .score-item {
+    background: #f8fafc;
+    border-radius: 10px;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+  }
+  .score-item .label { font-size: 12px; color: #64748b; }
+  .score-item .value { font-size: 18px; font-weight: 700; }
+
+  /* Flag list */
+  .flag-list { list-style: none; margin: 16px 0; }
+  .flag-list li {
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    border-left: 4px solid;
+  }
+  .flag-list li.red { background: #fef2f2; border-color: #ef4444; color: #991b1b; }
+  .flag-list li.amber { background: #fffbeb; border-color: #f59e0b; color: #92400e; }
+
+  /* Two column */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  .two-col .card {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+  }
+  .two-col .card h4 { font-size: 15px; font-weight: 600; margin-bottom: 10px; }
+
+  /* Quote */
+  .quote {
+    background: #f1f5f9;
+    border-left: 4px solid #0f172a;
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    margin: 16px 0;
+    font-style: italic;
+    color: #475569;
+  }
+
+  /* Insight card */
+  .insight {
+    background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+    border: 1px solid #86efac;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 16px 0;
+  }
+  .insight h4 { color: #166534; font-size: 15px; font-weight: 600; margin-bottom: 8px; }
+  .insight p { color: #166534; font-size: 14px; margin-bottom: 0; }
+
+  /* Stat highlight */
+  .stat-row {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  .stat {
+    flex: 1;
+    min-width: 120px;
+    background: #f8fafc;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+  }
+  .stat .num { font-size: 28px; font-weight: 700; }
+  .stat .lbl { font-size: 12px; color: #64748b; margin-top: 2px; }
+
+  /* Fix cards */
+  .fix-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin: 16px 0;
+  }
+  .fix-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  .fix-card .icon { font-size: 20px; margin-bottom: 6px; }
+  .fix-card h5 { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+  .fix-card p { font-size: 13px; color: #64748b; margin-bottom: 0; }
+
+  /* File listing */
+  .file-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 16px 0;
+  }
+  .file-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f8fafc;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 13px;
+    border: 1px solid #e2e8f0;
+  }
+  .file-item .icon { font-size: 18px; }
+  .file-item .status {
+    margin-left: auto;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 10px;
+  }
+  .file-item .status.done { background: #dcfce7; color: #166534; }
+  .file-item .status.ready { background: #fef9c3; color: #854d0e; }
+  .file-item .status.wait { background: #dbeafe; color: #1e40af; }
+
+  /* Architecture */
+  .arch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin: 24px 0;
+  }
+  .arch-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .arch-box {
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    min-width: 120px;
+  }
+  .arch-box.dark { background: #0f172a; color: white; }
+  .arch-box.blue { background: #dbeafe; color: #1e40af; }
+  .arch-box.green { background: #dcfce7; color: #166534; }
+  .arch-box.amber { background: #fef3c7; color: #92400e; }
+  .arch-box.pink { background: #fce7f3; color: #9d174d; }
+  .arch-arrow { color: #94a3b8; font-size: 16px; }
+
+  @media (max-width: 640px) {
+    .cover { padding: 30px 20px; }
+    .cover h1 { font-size: 28px; }
+    .section { padding: 24px; }
+    .two-col { grid-template-columns: 1fr; }
+    .fix-grid { grid-template-columns: 1fr; }
+    .file-grid { grid-template-columns: 1fr; }
+    .score-details { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- COVER -->
+<div class="cover">
+  <div class="badge">CONFIDENTIAL — BRAINSTORMING DOCUMENT</div>
+  <h1>Lakmé Academy<br>Call Conversion System</h1>
+  <p class="subtitle">How leads flow in, where they leak, and what we built to fix it</p>
+  <div class="meta">
+    <span>📍 Sector 18, Noida (Pilot)</span>
+    <span>📅 26 May 2026</span>
+    <span>🏢 Apptech × Lakmé</span>
+  </div>
+</div>
+
+<!-- 1. THE BUSINESS -->
+<div class="section">
+  <h2><span class="num">1</span> The Business</h2>
+  <p><strong>Apptech</strong> (Aptech Ltd) runs <strong>Lakmé Academy</strong> — India's largest beauty training network, in partnership with Lakmé (HUL). We have <strong>3 centers in Noida</strong>:</p>
+  <div class="stat-row">
+    <div class="stat"><div class="num">Sector 18</div><div class="lbl">Prime commercial hub</div></div>
+    <div class="stat"><div class="num">Sector 62</div><div class="lbl">IT/Corporate corridor</div></div>
+    <div class="stat"><div class="num">Gr. Noida</div><div class="lbl">University belt</div></div>
+  </div>
+  <p>Each center offers beauty courses — makeup, hair, skin, cosmetology — ranging from ₹30,000 to ₹2.5 lakhs. Students enroll, get trained, and are placed at Lakmé Salons, Nykaa, and 50+ other brands.</p>
+</div>
+
+<!-- 2. HOW LEADS FLOW -->
+<div class="section">
+  <h2><span class="num">2</span> The Lead Pipeline</h2>
+  <p>Here is the complete journey from when a potential student first hears about us to when they enroll:</p>
+
+  <div class="pipeline">
+    <div class="pipe-step">
+      <div class="box green">Discovery</div>
+      <div class="label">Google, Meta,<br>Website, DashLocal</div>
+    </div>
+    <div class="pipe-arrow">→</div>
+    <div class="pipe-step">
+      <div class="box green">Lead Captured</div>
+      <div class="label">Call → IVR →<br>Superleap CRM</div>
+    </div>
+    <div class="pipe-arrow">→</div>
+    <div class="pipe-step">
+      <div class="box red">Counselor Call</div>
+      <div class="label">💥 BROKEN HERE<br>8/100 score</div>
+    </div>
+    <div class="pipe-arrow">→</div>
+    <div class="pipe-step">
+      <div class="box amber">Center Visit</div>
+      <div class="label">Rarely happens<br>due to prior leaks</div>
+    </div>
+    <div class="pipe-arrow">→</div>
+    <div class="pipe-step">
+      <div class="box green">Enrollment</div>
+      <div class="label">Admission</div>
+    </div>
+  </div>
+
+  <h3>The Two Platforms That Power This</h3>
+  <div class="two-col">
+    <div class="card">
+      <h4>📡 DashLocal (Discovery Layer)</h4>
+      <p style="font-size:13px;margin-bottom:0;">
+        Manages Google Maps listings, reviews, product enquiries, and local search visibility. Tracks views (1K+), actions (69), calls (16), directions (44). Top searches: "lakme academy noida", "beautician course". Top product enquiry: "Nail Art Courses".
+      </p>
+    </div>
+    <div class="card">
+      <h4>📊 Superleap (Conversion Layer)</h4>
+      <p style="font-size:13px;margin-bottom:0;">
+        CRM that captures every call via IVR, records conversations, tracks lead stages (Enquiry → Follow-up → Interested → Not Eligible). Each call generates a rich JSON with full transcript, speaker times, dead air, and interactivity score.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- 3. THE LEAK POINTS -->
+<div class="section">
+  <h2><span class="num">3</span> Where the Pipeline Leaks</h2>
+  <p>We analyzed your actual Superleap data and a real call recording. Here are the <strong>5 critical leak points</strong>:</p>
+
+  <div class="stat-row">
+    <div class="stat"><div class="num" style="color:#ef4444;">400+</div><div class="lbl">Minutes to first call<br><span style="font-size:11px;color:#94a3b8;">Should be &lt;5</span></div></div>
+    <div class="stat"><div class="num" style="color:#ef4444;">66%</div><div class="lbl">Agent talks too much<br><span style="font-size:11px;color:#94a3b8;">Should be 40%</span></div></div>
+    <div class="stat"><div class="num" style="color:#ef4444;">30s</div><div class="lbl">Dead air per call<br><span style="font-size:11px;color:#94a3b8;">Awkward silence</span></div></div>
+    <div class="stat"><div class="num" style="color:#ef4444;">0</div><div class="lbl">Visit bookings<br><span style="font-size:11px;color:#94a3b8;">From analyzed call</span></div></div>
+  </div>
+
+  <ul class="flag-list">
+    <li class="red">🔴 Speed-to-lead: Counselors take 100–400+ minutes to call back. Industry best is under 5 minutes. By then the lead is cold or already with a competitor.</li>
+    <li class="red">🔴 Counselor talks 66% of the time instead of listening. The prospect should talk more than the counselor (40:60 ratio).</li>
+    <li class="red">🔴 Course dumping: "We have 48 types of courses" — the customer literally said "that's tough to explain." Overwhelming kills conversion.</li>
+    <li class="red">🔴 No diagnosis: In the real call, the customer said "I am a makeup artist." The counselor missed this completely and pitched basic courses instead of advanced.</li>
+    <li class="red">🔴 No close: Call ended with "I will share content, you check and report to me." No visit booked. No follow-up time set. The ball was put in the customer's court.</li>
+  </ul>
+
+  <div class="quote">
+    "The customer was asking direct buying questions — 'what's in ₹30,000?', 'what's the full course?', 'what's cosmetology?' — he wanted to enroll. The counselor couldn't close."
+  </div>
+</div>
+
+<!-- 4. THE REAL CALL -->
+<div class="section">
+  <h2><span class="num">4</span> The Real Call: Proof in the Data</h2>
+  <p>We took one actual Superleap call JSON and ran it through our analyzer. Here's what it found:</p>
+
+  <div class="score-card">
+    <div class="score-big">
+      <div class="num">8</div>
+      <div class="lbl">out of 100</div>
+      <div class="grade">⛔ CRITICAL</div>
+    </div>
+    <div class="score-details">
+      <div class="score-item"><div class="label">Counselor</div><div class="value" style="color:#dc2626;">Deepti</div></div>
+      <div class="score-item"><div class="label">Prospect</div><div class="value">Surajan</div></div>
+      <div class="score-item"><div class="label">Duration</div><div class="value">4.2 min</div></div>
+      <div class="score-item"><div class="label">Talk Ratio</div><div class="value" style="color:#dc2626;">66% agent</div></div>
+      <div class="score-item"><div class="label">Dead Air</div><div class="value" style="color:#dc2626;">30.86s</div></div>
+      <div class="score-item"><div class="label">Longest Talk</div><div class="value" style="color:#dc2626;">35.2s</div></div>
+    </div>
+  </div>
+
+  <h3>What Went Wrong — 8 Flags Found</h3>
+  <ul class="flag-list">
+    <li class="red">🔴 Said "Lakshmi Academy" instead of "Lakmé Academy" — brand damage in the first 3 seconds</li>
+    <li class="red">🔴 Missed that customer IS a makeup artist — should have pitched advanced courses</li>
+    <li class="red">🔴 Course dumping — "48 types" overwhelmed the customer</li>
+    <li class="red">🔴 35-second monologue — lost the customer's attention</li>
+    <li class="red">🔴 7 different prices mentioned without structure — confusing</li>
+    <li class="red">🔴 No visit booked — the primary goal of every call</li>
+    <li class="amber">🟡 Agent speaking 66% of the time — not listening enough</li>
+    <li class="amber">🟡 30 seconds of dead air — awkward silence</li>
+  </ul>
+
+  <div class="insight">
+    <h4>💡 The Critical Miss</h4>
+    <p>The customer said <strong>"I am also asking because I am a makeup artist"</strong> at 0:35 into the call. This means he's experienced, knows terminology, and needs ADVANCED training. The counselor continued explaining basic courses for another 3 minutes. If she had asked one question — "What level are you at?" — she could have matched him to the right ₹90K advanced course and booked a visit in under 2 minutes.</p>
+  </div>
+</div>
+
+<!-- 5. WHAT WE BUILT -->
+<div class="section">
+  <h2><span class="num">5</span> What We Built: The Call Analyzer</h2>
+  <p>We built an automated system that reads Superleap call JSON files, scores every call, and generates coaching reports — <strong>no manual listening needed</strong>.</p>
+
+  <h3>How It Works</h3>
+  <div class="arch">
+    <div class="arch-row">
+      <div class="arch-box dark">Superleap JSON</div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-box blue">analyze_calls.py</div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-box green">Score + Flags</div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-box amber">Daily Report</div>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <div class="card">
+      <h4>📥 Input: Superleap Call JSON</h4>
+      <p style="font-size:13px;">Each completed call generates a JSON with:
+        <br>• Full transcript (who said what)
+        <br>• Agent speak time / Customer speak time
+        <br>• Dead air duration
+        <br>• Longest monologue / story
+        <br>• Interactivity score
+        <br>• Timestamped segments</p>
+    </div>
+    <div class="card">
+      <h4>📤 Output: Score + Coaching Report</h4>
+      <p style="font-size:13px;">For every call, the system generates:
+        <br>• <strong>Score /100</strong> (8 = critical)
+        <br>• <strong>Flags</strong> (brand error, course dump, no close...)
+        <br>• <strong>Coaching notes</strong> (what to fix)
+        <br>• <strong>Daily report</strong> (all calls summarized)
+        <br>• <strong>Trends</strong> (top mistakes by frequency)</p>
+    </div>
+  </div>
+
+  <h3>The Scoring Rubric (How We Judge Calls)</h3>
+  <div class="fix-grid">
+    <div class="fix-card"><div class="icon">🎯</div><h5>Opening — 10 pts</h5><p>Did they say the brand correctly? Greet professionally?</p></div>
+    <div class="fix-card"><div class="icon">🔍</div><h5>Discovery — 20 pts</h5><p>Did they ask about goal, experience, budget, timeline?</p></div>
+    <div class="fix-card"><div class="icon">📋</div><h5>Clarity — 20 pts</h5><p>Was the recommendation specific (not dumping 48 courses)?</p></div>
+    <div class="fix-card"><div class="icon">💰</div><h5>Fee Handling — 15 pts</h5><p>Was value established before price? Was pricing structured?</p></div>
+    <div class="fix-card"><div class="icon">🎬</div><h5>Closing — 20 pts</h5><p>Was a visit booked? Was a follow-up time confirmed?</p></div>
+    <div class="fix-card"><div class="icon">🎧</div><h5>Talk Ratio — 15 pts</h5><p>Did the counselor listen more than they talked? (40:60 ideal)</p></div>
+  </div>
+
+  <h3>Your Files (What's in the Folder)</h3>
+  <div class="file-grid">
+    <div class="file-item"><span class="icon">🐍</span> analyze_calls.py <span class="status done">WORKING</span></div>
+    <div class="file-item"><span class="icon">🐍</span> whatsapp_sender.py <span class="status ready">NEEDS API KEY</span></div>
+    <div class="file-item"><span class="icon">📄</span> counselor-playbook.md <span class="status done">DONE</span></div>
+    <div class="file-item"><span class="icon">📄</span> call-analysis-real.md <span class="status done">DONE</span></div>
+    <div class="file-item"><span class="icon">📄</span> call-analysis-template.md <span class="status done">DONE</span></div>
+    <div class="file-item"><span class="icon">📄</span> future-business-plan.md <span class="status done">DONE</span></div>
+    <div class="file-item"><span class="icon">📄</span> tech-architecture.md <span class="status done">DONE</span></div>
+    <div class="file-item"><span class="icon">📄</span> SETUP-GUIDE.md <span class="status done">DONE</span></div>
+    <div class="file-item"><span class="icon">📁</span> calls/ (drop JSONs here) <span class="status ready">READY</span></div>
+    <div class="file-item"><span class="icon">📁</span> reports/ (auto-generated) <span class="status done">WORKING</span></div>
+  </div>
+</div>
+
+<!-- 6. THE FIXES -->
+<div class="section">
+  <h2><span class="num">6</span> How to Fix the Leaks</h2>
+  <p>Based on the data, here are the <strong>5 highest-impact fixes</strong>, in order:</p>
+
+  <div class="fix-grid">
+    <div class="fix-card" style="border-left: 4px solid #ef4444;">
+      <div class="icon">⚡</div>
+      <h5>1. Speed-to-Lead (Fix: Immediate)</h5>
+      <p>Auto-send WhatsApp brochure within 30 seconds of lead creation. The counselor's job changes from "cold caller" to "follow-up on brochure." Target: first contact under 2 minutes.</p>
+    </div>
+    <div class="fix-card" style="border-left: 4px solid #ef4444;">
+      <div class="icon">📝</div>
+      <h5>2. Call Script (Fix: This Week)</h5>
+      <p>Every call follows: Greet → Ask 3 questions (current level? goal? timeline?) → Match 1 course → Overcome objection → Book visit. No listing of 48 courses. Ever.</p>
+    </div>
+    <div class="fix-card" style="border-left: 4px solid #f59e0b;">
+      <div class="icon">🎯</div>
+      <h5>3. Objection Handling (Fix: This Week)</h5>
+      <p>Pin the top 5 objections + responses to every desk. Fees high? → Break into EMI + placement salary. Will think? → "What's the one thing holding you back?" Location far? → Pin drop + metro route.</p>
+    </div>
+    <div class="fix-card" style="border-left: 4px solid #f59e0b;">
+      <div class="icon">📞</div>
+      <h5>4. Call Attempt Protocol (Fix: This Week)</h5>
+      <p>Attempt 1: within 2 min. Attempt 2: 30 min later. Attempt 3: next morning. Attempt 4: WhatsApp voice note. Log every attempt in Superleap. 3 unanswered → weekly broadcast list.</p>
+    </div>
+    <div class="fix-card" style="border-left: 4px solid #22c55e;">
+      <div class="icon">📊</div>
+      <h5>5. Daily Huddle (Fix: Ongoing)</h5>
+      <p>Every morning, review 3 numbers: % leads contacted within 5 min, % calls → visit booked, % visits → admission. This 15-minute huddle changes everything.</p>
+    </div>
+    <div class="fix-card" style="border-left: 4px solid #22c55e;">
+      <div class="icon">🤖</div>
+      <h5>6. Auto-Coaching (Fix: We Built It)</h5>
+      <p>Our analyzer scores every call automatically. Manager opens daily report → sees which counselors are weak → targets coaching. No manual listening. No guesswork.</p>
+    </div>
+  </div>
+</div>
+
+<!-- 7. THE ROADMAP -->
+<div class="section">
+  <h2><span class="num">7</span> The Roadmap</h2>
+
+  <div class="stat-row">
+    <div class="stat"><div class="num">Phase 1</div><div class="lbl">Fix Sector 18<br><span style="font-size:11px;color:#94a3b8;">1 center, 1 counselor</span></div></div>
+    <div class="stat"><div class="num">Phase 2</div><div class="lbl">Copy to Sector 62<br><span style="font-size:11px;color:#94a3b8;">Replicate playbook</span></div></div>
+    <div class="stat"><div class="num">Phase 3</div><div class="lbl">Copy to Gr. Noida<br><span style="font-size:11px;color:#94a3b8;">All 3 Noida centers</span></div></div>
+    <div class="stat"><div class="num">Phase 4</div><div class="lbl">Scale to all 150+<br><span style="font-size:11px;color:#94a3b8;">Pan-India LAPA centers</span></div></div>
+  </div>
+
+  <p><strong>Phase 1 is already running.</strong> The analyzer is scoring calls. The playbook is written. The WhatsApp integration is ready. Now we need:</p>
+  <ol style="margin:10px 0 16px 20px;color:#475569;">
+    <li><strong>Superleap to give us daily JSON exports</strong> (or API access) — so calls flow automatically</li>
+    <li><strong>WhatsApp API key</strong> — so reports come to your phone and brochures go to leads automatically</li>
+    <li><strong>Deploy the playbook</strong> — train Deepti/Sonia on the script and objection handling this week</li>
+    <li><strong>Review the daily report</strong> — see scores go from 8 → 30 → 60 → 80+ over the next weeks</li>
+  </ol>
+
+  <div class="insight">
+    <h4>📈 The Math</h4>
+    <p>You're already getting leads from Meta + Website. If we improve the call conversion from the current state (estimated ~5-10%) to just 25% by fixing speed, script, and closing — <strong>you can 3x your enrollment with zero additional ad spend.</strong></p>
+  </div>
+</div>
+
+<!-- 8. SUMMARY -->
+<div class="section" style="background: linear-gradient(135deg, #0f172a, #1e293b); color: white; border: none;">
+  <h2 style="color:white;"><span class="num" style="background:#f472b6;color:white;">8</span> The Bottom Line</h2>
+  <p style="color:#94a3b8; font-size:16px; margin-bottom:20px;">
+    You don't have a lead problem. You have a <strong style="color:white;">conversation problem</strong>.
+  </p>
+  <div style="display:grid; grid-template-columns: 1fr 1fr; gap:20px;">
+    <div style="background:rgba(255,255,255,0.05); border-radius:12px; padding:20px;">
+      <h4 style="color:white; font-size:15px; margin-bottom:10px;">✅ Already Working</h4>
+      <ul style="color:#94a3b8; font-size:13px; list-style:none;">
+        <li style="margin-bottom:6px;">✓ Lead generation (Meta, Google)</li>
+        <li style="margin-bottom:6px;">✓ Lead capture (Superleap IVR)</li>
+        <li style="margin-bottom:6px;">✓ Call recording (Superleap JSON)</li>
+        <li style="margin-bottom:6px;">✓ Call scoring (Our analyzer)</li>
+      </ul>
+    </div>
+    <div style="background:rgba(255,255,255,0.05); border-radius:12px; padding:20px;">
+      <h4 style="color:white; font-size:15px; margin-bottom:10px;">❌ Needs Fixing</h4>
+      <ul style="color:#94a3b8; font-size:13px; list-style:none;">
+        <li style="margin-bottom:6px;">✗ Speed-to-lead (400+ min → 2 min)</li>
+        <li style="margin-bottom:6px;">✗ Call script (dump → diagnose)</li>
+        <li style="margin-bottom:6px;">✗ Closing (no visit → book visit)</li>
+        <li style="margin-bottom:6px;">✗ Follow-up (random → structured)</li>
+      </ul>
+    </div>
+  </div>
+  <div style="margin-top:24px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.1);">
+    <p style="color:#94a3b8; font-size:14px; text-align:center;">
+      We have the data. We have the tool. We have the playbook.<br>
+      <strong style="color:white;">Now it's about execution.</strong>
+    </p>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

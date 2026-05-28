@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lakmé Academy — Lead Flow</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: #faf7f2;
+    color: #1a1a2e;
+    line-height: 1.6;
+  }
+
+  /* ─── HERO ─── */
+  .hero {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: #fff;
+    padding: 60px 24px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -50%; left: -50%;
+    width: 200%; height: 200%;
+    background: radial-gradient(circle at 70% 30%, rgba(233,69,96,.10) 0%, transparent 50%),
+                radial-gradient(circle at 30% 70%, rgba(226,135,67,.08) 0%, transparent 50%);
+    pointer-events: none;
+  }
+  .hero * { position: relative; z-index: 1; }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(255,255,255,.10);
+    backdrop-filter: blur(6px);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.7);
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-size: clamp(32px, 6vw, 56px);
+    font-weight: 800;
+    letter-spacing: -.03em;
+    line-height: 1.15;
+  }
+  .hero h1 span { background: linear-gradient(135deg, #e94560, #e28743); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero p {
+    margin-top: 16px;
+    font-size: clamp(16px, 2.5vw, 20px);
+    color: rgba(255,255,255,.6);
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+  }
+
+  /* ─── SECTION ─── */
+  .section { max-width: 1100px; margin: 0 auto; padding: 60px 24px; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+
+  /* ─── CARD ─── */
+  .card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.04), 0 8px 32px rgba(0,0,0,.04);
+    transition: transform .2s, box-shadow .2s;
+  }
+  .card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,.06), 0 20px 48px rgba(0,0,0,.06); }
+  .card h2 {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .card h2 .icon {
+    width: 36px; height: 36px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  .icon-dashlocal { background: #fef3c7; color: #b45309; }
+  .icon-superleap { background: #dbeafe; color: #1d4ed8; }
+
+  .module-list { display: flex; flex-direction: column; gap: 8px; }
+  .module-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    background: #f8f6f3;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .module-item .emoji { font-size: 18px; width: 24px; text-align: center; flex-shrink: 0; }
+  .module-item .desc { color: #6b7280; font-weight: 400; font-size: 13px; margin-left: auto; }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 16px;
+  }
+  .stat {
+    background: #f8f6f3;
+    padding: 14px;
+    border-radius: 12px;
+    text-align: center;
+  }
+  .stat .num { font-size: 24px; font-weight: 800; color: #1a1a2e; }
+  .stat .label { font-size: 12px; color: #6b7280; font-weight: 500; margin-top: 2px; }
+
+  /* ─── FLOW DIAGRAM ─── */
+  .flow { margin: 50px 0; }
+  .flow h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 36px;
+  }
+  .flow-steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .step {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px 24px;
+    min-width: 140px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,.04), 0 4px 16px rgba(0,0,0,.04);
+    position: relative;
+  }
+  .step .emoji-lg { font-size: 28px; margin-bottom: 6px; }
+  .step .label { font-size: 13px; font-weight: 600; color: #374151; }
+  .step .sub { font-size: 11px; color: #9ca3af; margin-top: 2px; }
+  .step.dashlocal-step { border-top: 3px solid #f59e0b; }
+  .step.superleap-step { border-top: 3px solid #3b82f6; }
+  .step.bridge-step { border-top: 3px solid #e94560; }
+
+  .arrow {
+    font-size: 20px;
+    color: #d1d5db;
+    padding: 0 6px;
+    flex-shrink: 0;
+  }
+
+  /* ─── GAP / FIX ─── */
+  .gap-box {
+    background: linear-gradient(135deg, #fef2f2, #fff7ed);
+    border: 1px solid #fecaca;
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-top: 40px;
+    text-align: center;
+  }
+  .gap-box h3 { color: #b91c1c; font-size: 18px; margin-bottom: 8px; }
+  .gap-box p { color: #7f1d1d; font-size: 14px; max-width: 600px; margin: 0 auto; }
+
+  .fix-box {
+    background: linear-gradient(135deg, #ecfdf5, #f0fdf4);
+    border: 1px solid #86efac;
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-top: 16px;
+    text-align: center;
+  }
+  .fix-box h3 { color: #166534; font-size: 18px; margin-bottom: 8px; }
+  .fix-box p { color: #14532d; font-size: 14px; max-width: 600px; margin: 0 auto; }
+
+  /* ─── TABLE ─── */
+  .layer-table { width: 100%; border-collapse: separate; border-spacing: 0; margin-top: 24px; border-radius: 16px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,.04); }
+  .layer-table th {
+    background: #1a1a2e;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+    padding: 14px 20px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+  }
+  .layer-table td {
+    padding: 16px 20px;
+    font-size: 14px;
+    background: #fff;
+    border-bottom: 1px solid #f3f0eb;
+  }
+  .layer-table tr:last-child td { border-bottom: none; }
+
+  /* ─── ISSUES ─── */
+  .issues { margin-top: 40px; }
+  .issues h3 { font-size: 18px; font-weight: 700; margin-bottom: 16px; }
+  .issue-list { display: flex; flex-direction: column; gap: 10px; }
+  .issue-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 18px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.04);
+  }
+  .issue-item .bullet {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    margin-top: 7px;
+    flex-shrink: 0;
+  }
+  .bullet-red { background: #ef4444; }
+  .bullet-amber { background: #f59e0b; }
+  .issue-item .text { font-size: 14px; }
+  .issue-item .text strong { font-weight: 600; }
+  .issue-item .text .fix { color: #059669; font-weight: 500; }
+
+  /* ─── SUPERLEAP FIELDS ─── */
+  .field-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  .field-tag {
+    background: #f3f0eb;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #374151;
+  }
+  .field-tag .val { color: #6b7280; font-weight: 400; display: block; font-size: 11px; margin-top: 2px; }
+
+  /* ─── FOOTER ─── */
+  .footer {
+    text-align: center;
+    padding: 40px 24px;
+    color: #9ca3af;
+    font-size: 13px;
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 768px) {
+    .two-col { grid-template-columns: 1fr; gap: 24px; }
+    .flow-steps { flex-direction: column; gap: 8px; }
+    .arrow { transform: rotate(90deg); padding: 4px 0; }
+    .stat-grid { grid-template-columns: 1fr 1fr; }
+    .field-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<div class="hero">
+  <div class="hero-badge">Lakmé Academy — Noida Sector 18</div>
+  <h1>DashLocal <span>+</span> Superleap</h1>
+  <p>How leads flow from Google discovery to center admission — and where the handoff breaks.</p>
+</div>
+
+<!-- ═══════════════ TWO PLATFORMS ═══════════════ -->
+<div class="section">
+  <div class="two-col">
+    <!-- DashLocal -->
+    <div class="card">
+      <h2>
+        <span class="icon icon-dashlocal">&#9783;</span>
+        DashLocal
+      </h2>
+      <p style="font-size:14px;color:#6b7280;margin-bottom:16px;">Top of funnel — local discovery &amp; reputation</p>
+      <div class="module-list">
+        <div class="module-item"><span class="emoji">&#127968;</span> Listing <span class="desc">Profile views, search queries, visibility</span></div>
+        <div class="module-item"><span class="emoji">&#128218;</span> Product <span class="desc">Course listings &amp; enquiries</span></div>
+        <div class="module-item"><span class="emoji">&#11088;</span> Review <span class="desc">Google ratings, reply management</span></div>
+        <div class="module-item"><span class="emoji">&#128222;</span> Leads <span class="desc">Raw inbound calls, missed/answered</span></div>
+      </div>
+      <div class="stat-grid">
+        <div class="stat"><div class="num">1K+</div><div class="label">Profile Views</div></div>
+        <div class="stat"><div class="num">69</div><div class="label">Total Actions</div></div>
+        <div class="stat"><div class="num">16</div><div class="label">Call Actions</div></div>
+        <div class="stat"><div class="num">44</div><div class="label">Direction Clicks</div></div>
+      </div>
+    </div>
+
+    <!-- Superleap -->
+    <div class="card">
+      <h2>
+        <span class="icon icon-superleap">&#9881;</span>
+        Superleap
+      </h2>
+      <p style="font-size:14px;color:#6b7280;margin-bottom:16px;">Middle/bottom funnel — conversion &amp; CRM</p>
+      <div class="module-list">
+        <div class="module-item"><span class="emoji">&#128200;</span> Opportunity Pipeline <span class="desc">Lead stages from enquiry to admission</span></div>
+        <div class="module-item"><span class="emoji">&#127908;</span> IVR + Call Recording <span class="desc">Inbound handling, transcripts, analytics</span></div>
+        <div class="module-item"><span class="emoji">&#129302;</span> AI Call Analysis <span class="desc">Sentiment, scoring, coaching flags</span></div>
+        <div class="module-item"><span class="emoji">&#9889;</span> Workflows <span class="desc">Auto-assign, reminders, status updates</span></div>
+      </div>
+      <div style="margin-top:16px;">
+        <h3 style="font-size:13px;font-weight:600;color:#374151;margin-bottom:8px;">Lead fields tracked</h3>
+        <div class="field-grid">
+          <div class="field-tag">Stage <span class="val">Enquiry / Follow-up / Interested / Visit</span></div>
+          <div class="field-tag">Source <span class="val">Meta Form, Website, API</span></div>
+          <div class="field-tag">Speed to first call <span class="val">0 – 414 min</span></div>
+          <div class="field-tag">Disposition <span class="val">Ringing / Not Interested / Location Issue</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ FLOW DIAGRAM ═══════════════ -->
+<div class="section flow">
+  <h2>&#128257; How Leads Flow</h2>
+  <div class="flow-steps">
+    <div class="step dashlocal-step">
+      <div class="emoji-lg">&#128269;</div>
+      <div class="label">Google Search</div>
+      <div class="sub">"makeup course noida"</div>
+    </div>
+    <div class="arrow">&#8594;</div>
+    <div class="step dashlocal-step">
+      <div class="emoji-lg">&#127968;</div>
+      <div class="label">DashLocal Listing</div>
+      <div class="sub">views, calls, directions</div>
+    </div>
+    <div class="arrow">&#8594;</div>
+    <div class="step bridge-step" style="border-color:#9ca3af; opacity:.5;">
+      <div class="emoji-lg">&#128476;</div>
+      <div class="label">Handoff</div>
+      <div class="sub" style="color:#ef4444;">BROKEN — no auto-push</div>
+    </div>
+    <div class="arrow" style="opacity:.3;">&#8594;</div>
+    <div class="step superleap-step">
+      <div class="emoji-lg">&#128202;</div>
+      <div class="label">Superleap Pipeline</div>
+      <div class="sub">follow-up, visit, admission</div>
+    </div>
+  </div>
+
+  <div class="gap-box">
+    <h3>&#9888; The Gap</h3>
+    <p>DashLocal captures intent (views, calls, direction clicks) but <strong>does not push leads into Superleap automatically</strong>. You can't track which Google searches &rarr; which admissions. The full funnel ROI is invisible.</p>
+  </div>
+  <div class="fix-box">
+    <h3>&#9989; The Fix</h3>
+    <p>Tag DashLocal-origin leads in Superleap. Auto-push inbound calls &amp; product enquiries from DashLocal into the Superleap opportunity pipeline. One unified view from discovery &rarr; admission.</p>
+  </div>
+</div>
+
+<!-- ═══════════════ LAYER COMPARISON ═══════════════ -->
+<div class="section">
+  <h2 style="font-size:24px;font-weight:700;margin-bottom:16px;">&#128196; Layer Comparison</h2>
+  <table class="layer-table">
+    <thead><tr><th>Layer</th><th>Tool</th><th>Function</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Top of Funnel</strong></td><td>DashLocal</td><td>Local discovery, listings, reviews, product enquiries, visibility metrics</td></tr>
+      <tr><td><strong>Middle / Bottom</strong></td><td>Superleap</td><td>Lead intake, IVR, call tracking, disposition, follow-up, conversion</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ═══════════════ OBSERVED ISSUES ═══════════════ -->
+<div class="section">
+  <h2 style="font-size:24px;font-weight:700;margin-bottom:8px;">&#128200; Current Issues in Superleap</h2>
+  <p style="font-size:14px;color:#6b7280;margin-bottom:20px;">From the live opportunity dashboard — Sector 18</p>
+  <div class="issue-list">
+    <div class="issue-item">
+      <span class="bullet bullet-red"></span>
+      <div class="text"><strong>Speed-to-lead is erratic</strong> — First call ranges from 0 to 414 minutes. Industry best is under 5 min. <span class="fix">&#8594; Auto-trigger WhatsApp/SMS within 1 min</span></div>
+    </div>
+    <div class="issue-item">
+      <span class="bullet bullet-red"></span>
+      <div class="text"><strong>High drop-off at "Ringing"</strong> — Most leads die at "Not Answering." No retry cadence. <span class="fix">&#8594; 3-call + WhatsApp + SMS sequence over 24 hrs</span></div>
+    </div>
+    <div class="issue-item">
+      <span class="bullet bullet-amber"></span>
+      <div class="text"><strong>Only 2 lead sources</strong> — Meta Form + Website. Google Ads, Instagram DM, YouTube missing. <span class="fix">&#8594; Add all source tracking</span></div>
+    </div>
+    <div class="issue-item">
+      <span class="bullet bullet-amber"></span>
+      <div class="text"><strong>Location Issue = #1 rejection</strong> — People outside Noida enquire but can't travel. <span class="fix">&#8594; Route to nearest center or offer online</span></div>
+    </div>
+    <div class="issue-item">
+      <span class="bullet bullet-amber"></span>
+      <div class="text"><strong>Single owner bottleneck</strong> — All leads assigned to "Sonia." No distribution. <span class="fix">&#8594; Auto-distribute by center or round-robin</span></div>
+    </div>
+    <div class="issue-item">
+      <span class="bullet bullet-red"></span>
+      <div class="text"><strong>No conversion tracking</strong> — No lead shown in "Admitted" stage. Funnel ends at "Follow-up." <span class="fix">&#8594; Define clear stages: Enquiry &rarr; Visit Scheduled &rarr; Visit Done &rarr; Admitted</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ 3 CENTERS ═══════════════ -->
+<div class="section">
+  <h2 style="font-size:24px;font-weight:700;margin-bottom:16px;">&#127963; Your 3 Centers</h2>
+  <div class="two-col" style="grid-template-columns:repeat(3,1fr);">
+    <div class="card" style="text-align:center;">
+      <div style="font-size:32px;margin-bottom:8px;">&#127961;</div>
+      <h3 style="font-size:16px;">Sector 18</h3>
+      <p style="font-size:13px;color:#6b7280;">Prime commercial hub, high footfall, metro-connected</p>
+    </div>
+    <div class="card" style="text-align:center;">
+      <div style="font-size:32px;margin-bottom:8px;">&#127963;</div>
+      <h3 style="font-size:16px;">Sector 62</h3>
+      <p style="font-size:13px;color:#6b7280;">IT/Corporate hub, young workforce, evening batches</p>
+    </div>
+    <div class="card" style="text-align:center;">
+      <div style="font-size:32px;margin-bottom:8px;">&#127979;</div>
+      <h3 style="font-size:16px;">Greater Noida</h3>
+      <p style="font-size:13px;color:#6b7280;">Educational hub, universities, residential boom</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  Lakmé Academy &middot; Apptech &middot; Noida &mdash; Live data as of 26 May 2026
+</div>
+
+</body>
+</html>

@@ -625,7 +625,7 @@ function showErr(e) {
   if (el) el.innerHTML = '<div style="color:#ef4444;font-size:14px;text-align:left;padding:16px;background:#fef2f2;border-radius:8px;"><b>ERROR</b><br>' + (e.message || e) + '<br><small>Type: ' + (e.constructor ? e.constructor.name : typeof e) + '</small></div>';
 }
 function loadReport() {
-  if (_data && _data !== '__DATA_OBJECT__') {
+  if (_data) {
     try {
       renderAndShow(_data);
       return;
