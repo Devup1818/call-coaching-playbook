@@ -185,7 +185,7 @@ window.onerror = function(msg, url, line, col, err) {
 };
 </script>
 <script>
-var _d = '__B64__';
+var _data = __DATA_OBJECT__;
 try {
   var ls_ok = false;
   try { var ls = localStorage; ls_ok = true; } catch(e) { var ls = null; }
@@ -625,10 +625,9 @@ function showErr(e) {
   if (el) el.innerHTML = '<div style="color:#ef4444;font-size:14px;text-align:left;padding:16px;background:#fef2f2;border-radius:8px;"><b>ERROR</b><br>' + (e.message || e) + '<br><small>Type: ' + (e.constructor ? e.constructor.name : typeof e) + '</small></div>';
 }
 function loadReport() {
-  if (_d && _d !== '__B64__') {
+  if (_data && _data !== '__DATA_OBJECT__') {
     try {
-      var data = JSON.parse(atob(_d));
-      renderAndShow(data);
+      renderAndShow(_data);
       return;
     } catch(e) { showErr(e); }
   }

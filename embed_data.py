@@ -1,8 +1,8 @@
-import json, base64, glob, os
+import json, os, glob
 
 base_dir = os.path.dirname(__file__)
 reports_dir = os.path.join(base_dir, "reports")
-targets = ["master-report.html", "training.html"]
+targets = ["master-report.html", "training.html", "index.html"]
 
 json_files = glob.glob(os.path.join(reports_dir, "master-data-*.json"))
 if not json_files:
@@ -13,10 +13,10 @@ latest = max(json_files, key=os.path.getmtime)
 print(f"Embedding: {latest}")
 
 with open(latest) as f:
-    raw_json = f.read()
+    data = json.load(f)
 
-b64 = base64.b64encode(raw_json.encode()).decode()
-B64_MARKER = "__B64__"
+json_str = json.dumps(data, ensure_ascii=False)
+MARKER = "__DATA_OBJECT__"
 
 for filename in targets:
     path = os.path.join(base_dir, filename)
@@ -26,13 +26,13 @@ for filename in targets:
     with open(path) as f:
         html = f.read()
 
-    if B64_MARKER not in html:
-        print(f"ERROR: Could not find '{B64_MARKER}' in {filename}")
+    if MARKER not in html:
+        print(f"ERROR: Could not find '{MARKER}' in {filename}")
         continue
 
-    html = html.replace(B64_MARKER, b64)
+    html = html.replace(MARKER, json_str)
     with open(path, "w") as f:
         f.write(html)
-    print(f"Done! {filename} now has embedded data ({len(raw_json)} bytes, {len(b64)} base64).")
+    print(f"Done! {filename} now has embedded data ({len(json_str)} bytes).")
 
 print("Open training.html directly in your browser.")
